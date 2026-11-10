@@ -1,1 +1,377 @@
-<html><head><meta content="text/html; charset=UTF-8" http-equiv="content-type"><style type="text/css">ol{margin:0;padding:0}table td,table th{padding:0}.c2{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Arial";font-style:normal}.c0{padding-top:12pt;padding-bottom:12pt;line-height:1.15;orphans:2;widows:2;text-align:left;height:11pt}.c1{padding-top:12pt;padding-bottom:12pt;line-height:1.15;orphans:2;widows:2;text-align:left}.c3{background-color:#ffffff;max-width:468pt;padding:72pt 72pt 72pt 72pt}.title{padding-top:0pt;color:#000000;font-size:26pt;padding-bottom:3pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}.subtitle{padding-top:0pt;color:#666666;font-size:15pt;padding-bottom:16pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}li{color:#000000;font-size:11pt;font-family:"Arial"}p{margin:0;color:#000000;font-size:11pt;font-family:"Arial"}h1{padding-top:20pt;color:#000000;font-size:20pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h2{padding-top:18pt;color:#000000;font-size:16pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h3{padding-top:16pt;color:#434343;font-size:14pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h4{padding-top:14pt;color:#666666;font-size:12pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h5{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h6{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;font-style:italic;orphans:2;widows:2;text-align:left}</style></head><body class="c3 doc-content"><p class="c1"><span class="c2">&lt;!DOCTYPE html&gt;</span></p><p class="c1"><span class="c2">&lt;html lang=&quot;en&quot;&gt;</span></p><p class="c1"><span class="c2">&lt;head&gt;</span></p><p class="c1"><span class="c2">&nbsp; &lt;meta charset=&quot;UTF-8&quot; /&gt;</span></p><p class="c1"><span class="c2">&nbsp; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;</span></p><p class="c1"><span class="c2">&nbsp; &lt;title&gt;Restcoin &mdash; Gamified Digital Wellness &amp; Focus Companion&lt;/title&gt;</span></p><p class="c1"><span class="c2">&nbsp; &lt;style&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; :root {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; --bg-dark: #0b0f19;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; --bg-card: #131a2a;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; --text-main: #f1f5f9;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; --text-muted: #94a3b8;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; --accent-cyan: #22d3ee;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; --accent-amber: #fbbf24;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; --border-color: #1e293b;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; * {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; box-sizing: border-box;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; margin: 0;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; padding: 0;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; html {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; scroll-behavior: smooth;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; body {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; background-color: var(--bg-dark);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; color: var(--text-main);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; line-height: 1.6;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; a {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; color: var(--accent-cyan);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; text-decoration: none;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; a:hover {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; text-decoration: underline;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; /* Navigation */</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; header {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; position: sticky;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; top: 0;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; z-index: 100;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; background: rgba(11, 15, 25, 0.9);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; backdrop-filter: blur(10px);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; border-bottom: 1px solid var(--border-color);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; .nav-container {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; max-width: 1080px;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; margin: 0 auto;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; padding: 1rem 1.5rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; display: flex;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; justify-content: space-between;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; align-items: center;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; .logo {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; font-size: 1.4rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; font-weight: 700;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; color: var(--accent-cyan);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; letter-spacing: 0.5px;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; .nav-links {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; display: flex;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; gap: 1.5rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; font-size: 0.95rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; .nav-links a {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; color: var(--text-main);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; .nav-links a:hover {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; color: var(--accent-cyan);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; text-decoration: none;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; /* Container */</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; .container {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; max-width: 1080px;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; margin: 0 auto;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; padding: 4rem 1.5rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; /* Hero */</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; .hero {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; padding: 5rem 1.5rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; border-bottom: 1px solid var(--border-color);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; .hero h1 {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; font-size: 2.5rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; margin-bottom: 1rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; line-height: 1.2;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; .hero p {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; max-width: 680px;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; margin: 0 auto 2rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; color: var(--text-muted);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; font-size: 1.15rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; .badge {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; display: inline-block;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; padding: 0.65rem 1.5rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; background: rgba(34, 211, 238, 0.12);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; border: 1px solid var(--accent-cyan);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; color: var(--accent-cyan);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; border-radius: 999px;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; font-weight: 600;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; font-size: 0.95rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; /* Section Titles */</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; h2.section-title {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; font-size: 1.8rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; margin-bottom: 2rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; color: var(--accent-cyan);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; /* Grid Cards */</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; .grid {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; display: grid;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; gap: 1.5rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; .card {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; background: var(--bg-card);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; border: 1px solid var(--border-color);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; border-radius: 12px;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; padding: 1.75rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; .card h3 {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; color: var(--accent-amber);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; margin-bottom: 0.75rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; font-size: 1.2rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; .card p {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; color: var(--text-muted);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; font-size: 0.95rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; .notice-box {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; margin-top: 2rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; padding: 1.25rem 1.5rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; background: rgba(251, 191, 36, 0.08);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; border-left: 4px solid var(--accent-amber);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; border-radius: 6px;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; color: var(--text-main);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; font-size: 0.95rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; /* Privacy Policy */</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; .privacy-section {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; border-top: 1px solid var(--border-color);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; .privacy-box {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; background: var(--bg-card);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; border: 1px solid var(--border-color);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; border-radius: 12px;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; padding: 2.5rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; .privacy-box h3 {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; color: var(--text-main);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; margin: 1.75rem 0 0.75rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; font-size: 1.2rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; border-bottom: 1px solid var(--border-color);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; padding-bottom: 0.4rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; .privacy-box p, .privacy-box li {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; color: var(--text-muted);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; font-size: 0.95rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; margin-bottom: 0.6rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; .privacy-box ul, .privacy-box ol {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; padding-left: 1.5rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; margin-bottom: 1rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; /* Footer */</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; footer {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; border-top: 1px solid var(--border-color);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; padding: 2.5rem 1.5rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; text-align: center;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; color: var(--text-muted);</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; font-size: 0.9rem;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; @media (max-width: 640px) {</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; .hero h1 { font-size: 2rem; }</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; .nav-links { display: none; }</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; .privacy-box { padding: 1.5rem; }</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; }</span></p><p class="c1"><span class="c2">&nbsp; &lt;/style&gt;</span></p><p class="c1"><span class="c2">&lt;/head&gt;</span></p><p class="c1"><span class="c2">&lt;body&gt;</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &lt;header&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &lt;div class=&quot;nav-container&quot;&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;div class=&quot;logo&quot;&gt;Re$tcoin&lt;/div&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;nav class=&quot;nav-links&quot;&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;#how-it-works&quot;&gt;How It Works&lt;/a&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;#business-model&quot;&gt;Business Model&lt;/a&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;#privacy-policy&quot;&gt;Privacy Policy&lt;/a&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;a href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;/nav&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c2">&nbsp; &lt;/header&gt;</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &lt;section class=&quot;hero&quot;&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &lt;h1&gt;Restcoin &mdash; Gamified Digital Wellness &amp;amp; Focus Companion&lt;/h1&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &lt;p&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; Build healthier screen-time habits. Put your phone down, stay present, and earn non-cashable in-app points to unlock custom focus tools and local partner perks.</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &lt;/p&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &lt;span class=&quot;badge&quot;&gt;Coming Soon on Google Play&lt;/span&gt;</span></p><p class="c1"><span class="c2">&nbsp; &lt;/section&gt;</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &lt;section id=&quot;how-it-works&quot; class=&quot;container&quot;&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &lt;h2 class=&quot;section-title&quot;&gt;How It Works&lt;/h2&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &lt;div class=&quot;grid&quot;&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Screen-Off Focus Tracking&lt;/h3&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Automatically tracks your screen-off duration during work, study, or rest&mdash;helping you reduce digital fatigue and reclaim your attention.&lt;/p&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Focus Zones (Dojos)&lt;/h3&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Check in at designated quiet zones, libraries, cafes, or partner venues to boost your focus progress with location-based multipliers.&lt;/p&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;Gamified Habit Rewards&lt;/h3&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Earn non-transferable in-app virtual points for completing daily focus milestones and 60-minute marathon sessions.&lt;/p&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c2">&nbsp; &lt;/section&gt;</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &lt;section id=&quot;business-model&quot; class=&quot;container&quot; style=&quot;padding-top: 0;&quot;&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &lt;h2 class=&quot;section-title&quot;&gt;Business &amp;amp; Monetization Model&lt;/h2&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &lt;div class=&quot;grid&quot;&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;In-App Purchases (Digital Goods)&lt;/h3&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Users can purchase virtual equipment upgrades and unlock custom Focus Zones (Dojos) securely via Google Play Billing.&lt;/p&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;div class=&quot;card&quot;&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;h3&gt;B2B Partnerships &amp;amp; ESG Campaigns&lt;/h3&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;p&gt;Corporate clients and local businesses can sponsor Focus Zones (O2O foot-traffic marketing) or launch ESG/CSR digital wellness initiatives.&lt;/p&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &lt;div class=&quot;notice-box&quot;&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;strong&gt;Virtual Points Clarification:&lt;/strong&gt; Despite the brand name &quot;Restcoin,&quot; the app does &lt;strong&gt;not&lt;/strong&gt; involve cryptocurrency, blockchain, token trading, financial services, or cash-out mechanisms. All points earned are strictly closed-loop, non-cashable virtual rewards used within the app ecosystem.</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c2">&nbsp; &lt;/section&gt;</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &lt;section id=&quot;privacy-policy&quot; class=&quot;container privacy-section&quot;&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &lt;h2 class=&quot;section-title&quot;&gt;Privacy Policy&lt;/h2&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &lt;div class=&quot;privacy-box&quot;&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;p&gt;&lt;strong&gt;Effective Date:&lt;/strong&gt; November 10, 2026 &amp;nbsp;|&amp;nbsp; &lt;strong&gt;Last Updated:&lt;/strong&gt; November 10, 2026&lt;/p&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;p&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; [Restcoin Inc.] (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) operates the &lt;strong&gt;Restcoin&lt;/strong&gt; mobile application (the &quot;App&quot;). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our App. By using the App, you agree to the collection and use of information in accordance with this policy.</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;/p&gt;</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;h3&gt;1. Information We Collect&lt;/h3&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;ul&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;strong&gt;Account Information:&lt;/strong&gt; Email address, username, and authentication credentials (via Firebase Authentication or third-party sign-in providers).&lt;/li&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;strong&gt;Screen-Off &amp;amp; Focus Activity Data:&lt;/strong&gt; Duration your device screen remains turned off during active focus sessions to calculate your non-cashable in-app virtual rewards.&lt;/li&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;strong&gt;Location Data (Geofencing):&lt;/strong&gt; With your explicit permission, approximate or precise location data to verify when you are within designated Focus Zones (&quot;Dojos&quot;).&lt;/li&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;strong&gt;Device &amp;amp; Sensor Data:&lt;/strong&gt; Motion and orientation sensors (e.g., accelerometer/gyroscope) solely to verify genuine focus sessions and prevent automated spoofing.&lt;/li&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;strong&gt;Purchase &amp;amp; Transaction Data:&lt;/strong&gt; In-app purchases are processed securely by Google Play Billing and managed via RevenueCat. We do not collect or store your credit card or banking details.&lt;/li&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;strong&gt;Usage &amp;amp; Diagnostics Data:&lt;/strong&gt; Crash logs, performance metrics, and basic device information to maintain app stability.&lt;/li&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;/ul&gt;</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;h3&gt;2. How We Use Your Information&lt;/h3&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;ul&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;To operate and provide the core features of the Restcoin App (tracking focus time, calculating in-app points, and verifying Dojo check-ins).&lt;/li&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;To process in-app purchases and unlock digital items.&lt;/li&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;To detect, prevent, and address technical issues, cheating, or fraudulent activities.&lt;/li&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;To respond to user support inquiries and send important service-related notices.&lt;/li&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;/ul&gt;</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;h3&gt;3. Third-Party Service Providers&lt;/h3&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;p&gt;We share necessary data solely with trusted third-party providers to operate the App: &lt;strong&gt;Google Firebase&lt;/strong&gt; (Authentication, Cloud Firestore, Analytics, Crashlytics), &lt;strong&gt;RevenueCat&lt;/strong&gt; (In-app purchase management), and &lt;strong&gt;Google Play Services&lt;/strong&gt; (Payment processing and location services). We do &lt;strong&gt;not&lt;/strong&gt; sell your personal data to third parties.&lt;/p&gt;</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;h3&gt;4. Data Security&lt;/h3&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;p&gt;We implement industry-standard security measures, including encrypting data in transit via HTTPS/TLS and securing cloud databases with strict access controls.&lt;/p&gt;</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;h3&gt;5. Data Retention and Account Deletion&lt;/h3&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;p&gt;We retain your personal data only for as long as your account is active or as needed to provide services. You may delete your account and associated data at any time:&lt;/p&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;ol&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;strong&gt;In-App:&lt;/strong&gt; Go to &lt;strong&gt;Settings &amp;gt; Account &amp;gt; Delete Account&lt;/strong&gt; inside the Restcoin App.&lt;/li&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;li&gt;&lt;strong&gt;Web Request:&lt;/strong&gt; Submit a deletion request at &lt;a href=&quot;[Account Deletion URL]&quot;&gt;[Account Deletion URL]&lt;/a&gt; or email &lt;a href=&quot;mailto:[adam.lee1118@gmail.com]&quot;&gt;[adam.lee1118@gmail.com]&lt;/a&gt; with the subject &quot;Account Deletion Request.&quot;&lt;/li&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;/ol&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;p&gt;Upon verification, we will permanently delete your account and personal data from our active servers within 30 days.&lt;/p&gt;</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;h3&gt;6. Children&#39;s Privacy&lt;/h3&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;p&gt;The App is not intended for children under the age of 13. We do not knowingly collect personally identifiable information from children.&lt;/p&gt;</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;h3&gt;7. Changes to This Privacy Policy&lt;/h3&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;p&gt;We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated &quot;Last Updated&quot; date.&lt;/p&gt;</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;h3 id=&quot;contact&quot;&gt;8. Contact Us&lt;/h3&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;p&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;strong&gt;Entity Name:&lt;/strong&gt; [Restcoin Inc.]&lt;br /&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;strong&gt;Email:&lt;/strong&gt; &lt;a href=&quot;mailto:[adam.lee1118@gmail.coml]&quot;&gt;[adam.lee1118@gmail.com]&lt;/a&gt;&lt;br /&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &nbsp; &lt;strong&gt;Address:&lt;/strong&gt; [Company Address]</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &nbsp; &lt;/p&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &lt;/div&gt;</span></p><p class="c1"><span class="c2">&nbsp; &lt;/section&gt;</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&nbsp; &lt;footer&gt;</span></p><p class="c1"><span class="c2">&nbsp; &nbsp; &lt;p&gt;&amp;copy; 2026 [Restcoin Inc.]. All rights reserved. | &lt;a href=&quot;#privacy-policy&quot;&gt;Privacy Policy&lt;/a&gt; | &lt;a href=&quot;mailto:[adam.lee1118@gmail.com]&quot;&gt;[adam.lee1118@gmail.com]&lt;/a&gt;&lt;/p&gt;</span></p><p class="c1"><span class="c2">&nbsp; &lt;/footer&gt;</span></p><p class="c0"><span class="c2"></span></p><p class="c1"><span class="c2">&lt;/body&gt;</span></p><p class="c1"><span class="c2">&lt;/html&gt;</span></p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restcoin — Gamified Digital Wellness & Focus Companion</title>
+  <style>
+    :root {
+      --bg-dark: #0b0f19;
+      --bg-card: #131a2a;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --accent-cyan: #22d3ee;
+      --accent-amber: #fbbf24;
+      --border-color: #1e293b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent-cyan);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Navigation */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(11, 15, 25, 0.9);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      letter-spacing: 0.5px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a {
+      color: var(--text-main);
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-cyan);
+      text-decoration: none;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 5rem 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: 0 auto 2rem;
+      color: var(--text-muted);
+      font-size: 1.15rem;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.65rem 1.5rem;
+      background: rgba(34, 211, 238, 0.12);
+      border: 1px solid var(--accent-cyan);
+      color: var(--accent-cyan);
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    /* Section Titles */
+    h2.section-title {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      color: var(--accent-cyan);
+      text-align: center;
+    }
+
+    /* Grid Cards */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.75rem;
+    }
+
+    .card h3 {
+      color: var(--accent-amber);
+      margin-bottom: 0.75rem;
+      font-size: 1.2rem;
+    }
+
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .notice-box {
+      margin-top: 2rem;
+      padding: 1.25rem 1.5rem;
+      background: rgba(251, 191, 36, 0.08);
+      border-left: 4px solid var(--accent-amber);
+      border-radius: 6px;
+      color: var(--text-main);
+      font-size: 0.95rem;
+    }
+
+    /* Legal Sections (Privacy & Terms) */
+    .legal-section {
+      border-top: 1px solid var(--border-color);
+    }
+
+    .legal-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 2.5rem;
+    }
+
+    .legal-box h3 {
+      color: var(--text-main);
+      margin: 1.75rem 0 0.75rem;
+      font-size: 1.2rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.4rem;
+    }
+
+    .legal-box p, .legal-box li {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .legal-box ul, .legal-box ol {
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border-color);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 2rem; }
+      .nav-links { display: none; }
+      .legal-box { padding: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <div class="logo">Re$tcoin</div>
+      <nav class="nav-links">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#business-model">Business Model</a>
+        <a href="#privacy-policy">Privacy Policy</a>
+        <a href="#terms-of-service">Terms of Service</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Restcoin — Gamified Digital Wellness &amp; Focus Companion</h1>
+    <p>
+      Build healthier screen-time habits. Put your phone down, stay present, and earn non-cashable in-app points to unlock custom focus tools and local partner perks.
+    </p>
+    <span class="badge">Coming Soon on Google Play</span>
+  </section>
+
+  <section id="how-it-works" class="container">
+    <h2 class="section-title">How It Works</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Screen-Off Focus Tracking</h3>
+        <p>Automatically tracks your screen-off duration during work, study, or rest—helping you reduce digital fatigue and reclaim your attention.</p>
+      </div>
+      <div class="card">
+        <h3>Focus Zones (Dojos)</h3>
+        <p>Check in at designated quiet zones, libraries, cafes, or partner venues to boost your focus progress with location-based multipliers.</p>
+      </div>
+      <div class="card">
+        <h3>Gamified Habit Rewards</h3>
+        <p>Earn non-transferable in-app virtual points for completing daily focus milestones and 60-minute marathon sessions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="business-model" class="container" style="padding-top: 0;">
+    <h2 class="section-title">Business &amp; Monetization Model</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>In-App Purchases (Digital Goods)</h3>
+        <p>Users can purchase virtual equipment upgrades and unlock custom Focus Zones (Dojos) securely via Google Play Billing.</p>
+      </div>
+      <div class="card">
+        <h3>B2B Partnerships &amp; ESG Campaigns</h3>
+        <p>Corporate clients and local businesses can sponsor Focus Zones (O2O foot-traffic marketing) or launch ESG/CSR digital wellness initiatives.</p>
+      </div>
+    </div>
+    <div class="notice-box">
+      <strong>Virtual Points Clarification:</strong> Despite the brand name "Restcoin," the app does <strong>not</strong> involve cryptocurrency, blockchain, token trading, financial services, or cash-out mechanisms. All points earned are strictly closed-loop, non-cashable virtual rewards used within the app ecosystem.
+    </div>
+  </section>
+
+  <section id="privacy-policy" class="container legal-section">
+    <h2 class="section-title">Privacy Policy</h2>
+    <div class="legal-box">
+      <p><strong>Effective Date:</strong> November 10, 2026 &nbsp;|&nbsp; <strong>Last Updated:</strong> November 10, 2026</p>
+      <p>
+        [Restcoin LLC] ("we," "our," or "us") operates the <strong>Restcoin</strong> mobile application (the "App"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our App. By using the App, you agree to the collection and use of information in accordance with this policy.
+      </p>
+
+      <h3>1. Information We Collect</h3>
+      <ul>
+        <li><strong>Account Information:</strong> Email address, username, and authentication credentials (via Firebase Authentication or third-party sign-in providers).</li>
+        <li><strong>Screen-Off &amp; Focus Activity Data:</strong> Duration your device screen remains turned off during active focus sessions to calculate your non-cashable in-app virtual rewards.</li>
+        <li><strong>Location Data (Geofencing):</strong> With your explicit permission, approximate or precise location data to verify when you are within designated Focus Zones ("Dojos").</li>
+        <li><strong>Device &amp; Sensor Data:</strong> Motion and orientation sensors (e.g., accelerometer/gyroscope) solely to verify genuine focus sessions and prevent automated spoofing.</li>
+        <li><strong>Purchase &amp; Transaction Data:</strong> In-app purchases are processed securely by Google Play Billing and managed via RevenueCat. We do not collect or store your credit card or banking details.</li>
+        <li><strong>Usage &amp; Diagnostics Data:</strong> Crash logs, performance metrics, and basic device information to maintain app stability.</li>
+      </ul>
+
+      <h3>2. How We Use Your Information</h3>
+      <ul>
+        <li>To operate and provide the core features of the Restcoin App (tracking focus time, calculating in-app points, and verifying Dojo check-ins).</li>
+        <li>To process in-app purchases and unlock digital items.</li>
+        <li>To detect, prevent, and address technical issues, cheating, or fraudulent activities.</li>
+        <li>To respond to user support inquiries and send important service-related notices.</li>
+      </ul>
+
+      <h3>3. Third-Party Service Providers</h3>
+      <p>We share necessary data solely with trusted third-party providers to operate the App: <strong>Google Firebase</strong> (Authentication, Cloud Firestore, Analytics, Crashlytics), <strong>RevenueCat</strong> (In-app purchase management), and <strong>Google Play Services</strong> (Payment processing and location services). We do <strong>not</strong> sell your personal data to third parties.</p>
+
+      <h3>4. Data Security</h3>
+      <p>We implement industry-standard security measures, including encrypting data in transit via HTTPS/TLS and securing cloud databases with strict access controls.</p>
+
+      <h3>5. Data Retention and Account Deletion</h3>
+      <p>We retain your personal data only for as long as your account is active or as needed to provide services. You may delete your account and associated data at any time:</p>
+      <ol>
+        <li><strong>In-App:</strong> Go to <strong>Settings &gt; Account &gt; Delete Account</strong> inside the Restcoin App.</li>
+        <li><strong>Web Request:</strong> Submit a deletion request at <a href="[https://restcoin-app.github.io/restcoin-web/](https://restcoin-app.github.io/restcoin-web/]">[https://restcoin-app.github.io/restcoin-web/](https://restcoin-app.github.io/restcoin-web/]</a> or email <a href="mailto:[adam.lee1118@gmail.com]">[adam.lee1118@gmail.com]</a> with the subject "Account Deletion Request."</li>
+      </ol>
+      <p>Upon verification, we will permanently delete your account and personal data from our active servers within 30 days.</p>
+
+      <h3>6. Children's Privacy</h3>
+      <p>The App is not intended for children under the age of 13. We do not knowingly collect personally identifiable information from children.</p>
+
+      <h3>7. Changes to This Privacy Policy</h3>
+      <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last Updated" date.</p>
+    </div>
+  </section>
+
+  <section id="terms-of-service" class="container legal-section">
+    <h2 class="section-title">Terms of Service</h2>
+    <div class="legal-box">
+      <p><strong>Effective Date:</strong> November 10, 2026 &nbsp;|&nbsp; <strong>Last Updated:</strong> November 10, 2026</p>
+      <p>
+        Please read these Terms of Service ("Terms") carefully before using the <strong>Restcoin</strong> mobile application (the "App") operated by [Restcoin LLC] ("we," "our," or "us"). By accessing or using the App, you agree to be bound by these Terms.
+      </p>
+
+      <h3>1. Eligibility &amp; Account Registration</h3>
+      <p>You must be at least 13 years old (or the minimum age of digital consent in your jurisdiction) to use the App. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.</p>
+
+      <h3>2. Virtual Points &amp; Closed-Loop Ecosystem</h3>
+      <ul>
+        <li><strong>No Monetary Value:</strong> "Restcoin" points earned through screen-off or focus sessions are strictly closed-loop, non-cashable, and non-transferable virtual rewards used solely within the App.</li>
+        <li><strong>Not Cryptocurrency or Financial Services:</strong> The App does not offer cryptocurrency, blockchain tokens, investment products, or cash-out mechanisms. Virtual points cannot be exchanged for fiat currency or external financial value.</li>
+        <li><strong>Adjustments:</strong> We reserve the right to modify point earning rates, reward structures, or virtual item availability at any time to maintain ecosystem balance.</li>
+      </ul>
+
+      <h3>3. Fair Use &amp; Anti-Spoofing Policy</h3>
+      <p>To ensure fair participation, you agree <strong>not</strong> to:</p>
+      <ul>
+        <li>Use automated scripts, emulators, GPS spoofing tools, or hardware manipulation to falsify screen-off time, motion sensor data, or Dojo check-ins.</li>
+        <li>Attempt to reverse-engineer, decompile, or disrupt the App's backend servers or security mechanisms.</li>
+      </ul>
+      <p>Violation of this Fair Use Policy may result in immediate suspension or permanent termination of your account and forfeiture of accumulated virtual points.</p>
+
+      <h3>4. In-App Purchases &amp; Refunds</h3>
+      <p>The App offers optional in-app purchases (such as virtual equipment upgrades and custom Focus Zones). All payments are processed securely through Google Play Billing. Digital goods are generally non-refundable, except as required by applicable law or Google Play's standard refund policies.</p>
+
+      <h3>5. Intellectual Property</h3>
+      <p>All content, trademarks, logos (including the Re$tcoin branding), software code, and visual assets within the App are the exclusive property of [Restcoin LLC] and are protected by copyright and intellectual property laws.</p>
+
+      <h3>6. Disclaimer &amp; Limitation of Liability</h3>
+      <p>The App is provided on an "AS IS" and "AS AVAILABLE" basis for digital wellness and productivity purposes only. It is <strong>not</strong> a medical, psychological, or financial service. To the maximum extent permitted by law, [Restcoin LLC] shall not be liable for any indirect, incidental, or consequential damages arising from your use of the App.</p>
+
+      <h3>7. Governing Law</h3>
+      <p>These Terms shall be governed by and construed in accordance with the laws of the State of [State of Incorporation], United States, without regard to its conflict of law provisions.</p>
+
+      <h3 id="contact">8. Contact Us</h3>
+      <p>
+        If you have any questions about this Privacy Policy or these Terms of Service, please contact us at:<br /><br />
+        <strong>Entity Name:</strong> [Restcoin LLC Name]<br />
+        <strong>Email:</strong> <a href="mailto:[adam.lee1118@gmail.com]">[adam.lee1118@gmail.com]</a><br />
+        <strong>Address:</strong> [Company Address]
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      &copy; 2026 [Restcoin LLC]. All rights reserved. | 
+      <a href="#privacy-policy">Privacy Policy</a> | 
+      <a href="#terms-of-service">Terms of Service</a> | 
+      <a href="mailto:[adam.lee1118@gmail.com]">[adam.lee1118@gmail.com]</a>
+    </p>
+  </footer>
+
+</body>
+</html>
